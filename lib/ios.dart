@@ -62,7 +62,7 @@ void createIcons(FlutterLauncherIconsConfig config, String? flavor) {
   String iconName;
   final dynamic iosConfig = config.ios;
   if (flavor != null) {
-    final String catalogName = 'AppIcon-$flavor';
+    final String catalogName = '${flavor}AppIcon';
     printStatus('Building iOS launcher icon for $flavor');
     for (IosIconTemplate template in iosIcons) {
       saveNewIcons(template, image, catalogName);
